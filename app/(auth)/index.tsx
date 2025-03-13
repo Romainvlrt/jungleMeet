@@ -76,7 +76,7 @@ export default function LoginScreen() {
       .insert([{ username, password: hashedPassword, salt }]);
   
     if (error) {
-      Alert.alert("Erreur", "Erreur lors de l'inscription. -> " + error.message);
+      Alert.alert("Erreur", "Erreur lors de l'inscription.");
       return;
     }
   
